@@ -2,7 +2,8 @@
 provision ec2 via terraform
 
 ### Objectives
-- Provision VM on AWS EC2 instance by using Terraform.
+- Provision infrastructure to automate deploy webserver using Terraform.
+- Configure security and network.
 
 ### Recall
 
