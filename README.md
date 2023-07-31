@@ -11,12 +11,12 @@ provision High Availability Servers via terraform
 2. Create IAM users
 3. Attach Security group and keypair
 5. Write scrip
-6. Write IAC
+6. Write IAC (
     a) VPC
     b) Security Group
     c) EC2
     d) Load Balancer
-    e) RDS
+    e) RDS )
 
 ### Set up
 
