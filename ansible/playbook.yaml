@@ -1,0 +1,16 @@
+---
+- hosts: webservers
+  become: yes
+  tasks:
+    - name: Reset all UFW rules
+      community.general.ufw:
+        state: reset
+
+    - name: Deny all incoming traffic
+      community.general.ufw:
+        direction: incoming
+        policy: deny
+
+    - name: Enable firewall
+      community.general.ufw:
+        state: enabled
