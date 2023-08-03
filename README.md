@@ -3,7 +3,8 @@ provision High Availability Servers via terraform
 
 ### Objectives
 - Provision infrastructure to automate deploy webserver using Terraform.
-- Configure security and network.
+- Configure security, network, and load balancer.
+- Use Ansible to change configure firewall of the webservers.
 
 ### Recall
 
