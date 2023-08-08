@@ -37,3 +37,9 @@ provision High Availability Servers via terraform
     1. define bootstrap to connect to webserver (Apache2)
 6. Write `alb.tf` to provision application load balancer to receive request from internet and distribute load equally. [ref](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_target_group_attachment)
 7. Write configuration management in Ansible to change firewall setting. [ref](https://docs.ansible.com/ansible/latest/collections/community/general/ufw_module.html)
+
+### Next Steps
+1. Add automate testing
+2. Implement state management tools like S3
+3. Build CI/CD
+4. Modularization and Reusability
