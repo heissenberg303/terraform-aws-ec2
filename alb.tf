@@ -3,7 +3,7 @@ resource "aws_lb" "public" {
   name               = "tf-public-lb"
   internal           = false
   load_balancer_type = "application"
-  security_groups    = [aws_security_group.TF_SG_NEW.id]
+  security_groups    = [aws_security_group.public.id]
   subnets = [aws_subnet.subnet1.id, aws_subnet.subnet2.id]
 
   enable_deletion_protection = false
@@ -17,7 +17,7 @@ resource "aws_lb" "public" {
 resource "aws_lb_target_group_attachment" "webservers" {
   target_group_arn = aws_lb_target_group.backend.arn
   count = 2
-  target_id        = aws_instance.web[count.index].id
+  target_id        = aws_instance.webserver[count.index].id
   port             = 80
 }
 
